@@ -9,7 +9,7 @@ h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
-    margin-top: 3%; /* Adds a small margin above h1 elements */
+    margin-top: 0.8%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
 }
 
@@ -67,7 +67,7 @@ img {
     filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 340px; /* Sets the height of all images */
+    height: 320px; /* Sets the height of all images */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
@@ -75,7 +75,7 @@ img {
 
 /* Image element hover effects */
 img:hover {
-	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
+	filter: grayscale(0%);  /* Brings back most of the image's color when hovered over */
     transition: transform 1s; /* Transition lasts 1 second */
 	transform: scale(1.1); /* Image is increased slightly when hovered over */
 }
@@ -85,7 +85,7 @@ img:hover {
 @media screen and (max-width: 576px) {
     img {
         height: 100px;
-        margin-top: 150px;
+        margin-top: 60px;
     }
 }
 
@@ -104,8 +104,8 @@ footer {
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 100; /* This ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 1s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
-    animation: moveNav 1s; /* This applies the moveNav animation for all other browsers */
+    -webkit-animation: moveNav 1.2s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 1.2s; /* This applies the moveNav animation for all other browsers */
     text-align: center;
     display: block;
     margin: 0% auto;      /*center alignment*/
@@ -177,8 +177,8 @@ footer {
 /* Formatting for background video */
 #Typing_Video {
     position: fixed; /* This fixes the video to the page */
-    right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
-    bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
+    left: 0%; /* This ensures there is no space between the edge of the video and the edge of the page */
+    bottom:0%; /* This ensures no space between the bottom of the video and the bottom of the page */
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
     z-index: -1; /* This places the video behind the other elements on the page */
 }
@@ -197,8 +197,8 @@ footer {
     width: 100%; /* Ensures the video-text container fills the width of the video */
     padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveVideoText 1.5s;
-    animation: moveVideoText 1.5s;
+    -webkit-animation: moveVideoText 3s;
+    animation: moveVideoText 3s;
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
@@ -213,11 +213,16 @@ footer {
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
 } 
 
+.submenu {}
+   
+    
+
+
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
-    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    padding-top: 1%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
 }
@@ -240,7 +245,7 @@ footer {
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
 .Column_tall {
-    padding-top: 3.5%;
+    padding-top: 0.5%;
     height: 450px;
 }
 
@@ -302,3 +307,16 @@ form {
     font-family: "Trebuchet MS", Optima;
 }
 /***** END OF CONTACT FORM STYLING *****/
+
+.button-link {
+  display: block;
+  padding: 30px 30px;
+  background-color: #072849af;
+  color: white;
+  text-decoration: none; /* Removes underline */
+  border-radius: 30px;
+  text-align: center;
+  font-size:large;
+  margin-left: 5%;
+  margin-right: 5%;
+}

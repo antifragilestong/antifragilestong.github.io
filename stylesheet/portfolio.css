@@ -9,7 +9,7 @@ h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
-    margin-top: 0.8%; /* Adds a small margin above h1 elements */
+    margin-top: 0.7%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
 }
 
@@ -310,7 +310,7 @@ form {
 
 .button-link {
   display: block;
-  padding: 30px 30px;
+  padding: 28px 30px;
   background-color: #072849af;
   color: white;
   text-decoration: none; /* Removes underline */

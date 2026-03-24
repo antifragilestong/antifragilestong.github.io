@@ -1,7 +1,7 @@
 # antifragilestong.github.io
 A portfolio website
 
-This is a display of sample websites that I made using HTML, CSS, and Bootsrap4.
+This is an assignment of the Pitman course for displaying of sample websites that I made using HTML, CSS, and Bootsrap4.
 
 KC Wong Portfolio Site
     --This site shows the working experience and programming exprience of KC. 
@@ -13,8 +13,8 @@ Academy Cinemas Site
       It contains many Bootstrap components including but not limited to a navbar, jumbotron, 
       form, cards and dropdowns.
 
-Pet Dating Park Site
-    --This page is an example home page for a Pet Dating organisation. It's styled using CSS
+Dog's Dating Park Site
+    --This page is an example home page for a Dog's Dating organisation. It's styled using CSS
       and contains a navbar, image containers, and a form.
 
 Emoji Animation Site

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>KC Wong Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#ProjectsLink">Projects Link</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/video/Mount.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">K C Wong Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>We are all visitors to this time, this place. We are just passing through. 
+                        <br>Our purpose here is to observe, to learn, to grow, to love... and then we return home
+                    </q>
+                    <br> -Queen Elizabeth II 
+                    <br>
+                    <br> My name is KC. No matter our legacies are big or tiny, they live on. Welcome to my portfolio website. 
+                    <br> I love to share my working experience and my interest in programming.
+                    <br> Hope that you will enjoy and share with me too! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./images/ElderlyAI.png" alt="Elderly ai picture">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am studying the part-time Web Developer courses provided by Pitman. Six year ago, I had run my one-man-band merchandise trade business for more than 25 years. After Covid happened, I joined Amazon. Thanks for my employer support, I still have chance to study my interested subjects. In future, I hope that I can develop some softwares and may be some AI agents for helping elderly people to have better life and spend their time.  
+                    <br>
+                    <br>I have studied the following programming languages: HTML, CSS, Python, JavaScript, C# and database programing. 
+                    <br>
+                    <br>I still hope to learn a lot more programmings related to database and AI agents development. If you would like to talk to me, please <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+
+        <div class="Row">
+           <br>
+           <br>
+           <br>
+           <br>
+        </div>
+
+
+        <!--GitHub section-->
+        <div class="Row" id="ProjectsLink" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1 Column_tall">
+                 <div class="submenu">
+                        <h1>Projects Link</h1>
+                        <p>Below links show some recent finished computer programs. Please click to view the website.</p>
+                        <a href="./bootstrap4_project/academy_cinemas.html" class="button-link" target="_blank"><span style="font-size: larger; color: gold; font-style: italic;">Academy Cinemas:</span> Using the bootstrap4 css functions to make the website.   Click Here</a>
+                        <br>
+                        <a href="./HTML_and_CSS/index.html" class="button-link" target="_blank"><span style="font-size: larger; color: gold; font-style: italic;">Pet's Dating Park:</span> Using two CSS files linked to the HTML file to make the website.   Click Here</a>
+                        <br>
+                        <a href="./project/basic_css_demo_1.html" class="button-link" target="_blank"><span style="font-size: larger; color: gold; font-style: italic;">Emoji animation:</span> Linked CSS file to the HTML program to make the motion of the emojis.   Click Here</a>
+                </div>                    
+            </div>
+        
+          
+            <!--Right column-->
+            <div class="Column_2 Column_tall" id="GitHub">
+                <p class="center white-text">You can view my coding projects on my GitHub profile here:</p>
+                <a href="https://github.com/antifragilestong" target="_blank"><img height="50%" src="./images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <div class="Row">
+           <br>
+           <br>
+           <br>
+           <br>
+        </div>
+
+
+
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2">
+                <img src="./images/emailbox.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/xbdzvqbn" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" id="Name" name="Name" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Antifragilestrong Group., <a href="https://www.Google.com/" target="_blank">Exit to Google</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>

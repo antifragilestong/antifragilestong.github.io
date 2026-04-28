@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width" />
         <title>KC Wong Portfolio</title>
         <link rel="stylesheet" type="text/css" href="./stylesheet/portfolio.css">
+    
+            
     </head>
 
     <!--Body-->
@@ -15,6 +17,8 @@
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#GitHub">GitHub</a>
             <a href="#ProjectsLink">Projects Link</a>
             <a href="#Contact">Contact</a>
@@ -50,17 +54,99 @@
             </strong>
         </div>
 
+
+         <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/SquarePersonalPhoto.png" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML.png" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in: HTML,</div>
+                    </div>
+
+                     <!-- Slide 3 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/CSS_Bootstrap.png" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">CSS, Bootstrap & JavaScript,</div>
+                    </div>
+
+
+                    <!-- Slide 4 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                        
+                    </div>
+                    
+                    <!-- Slide 5 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/C_Sharp_2_Certificate.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 6 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text">as well as Database system learning,</div>
+                    </div>
+                    
+                     <!-- Slide 7 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/ManagingSoftware.png" alt="SQL logo"> 
+                        <div class="text">and Software Development Management.</div>
+                    </div>
+                    
+                                      
+                    <!-- Slide 8 of 8 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/emailbox_1.png" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text contact" href="#Contact">Contact me now! Click here.</a></div> 
+                    </div>  
+                    
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span>  
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                </div>
+            </div>
+        </div>
+
+
+
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
-                <img src="./images/ElderlyAI.png" alt="Elderly ai picture">
+            <h2 class="white-text">PROJECTS VISION</h2>
+                <div class="submenu">
+                    <img src="./images/ElderlyAI.png" alt="Elderly ai picture">
+                    <img src="./images/AssTech.png" alt="Assistive Technology">
+                </div>
             </div>
+           
+
             <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am studying the part-time Web Developer courses provided by Pitman. Six year ago, I had run my one-man-band merchandise trade business for more than 25 years. After Covid happened, I joined Amazon. Thanks for my employer support, I still have chance to study my interested subjects. In future, I hope that I can develop some softwares and may be some AI agents for helping elderly people to have better life and spend their time.  
+            <div class="Column_0">
+                <h2>About</h2>
+                <p style="font-size: 18px;">
+                    I am studying the part-time Web Developer courses provided by Pitman. Six year ago, I had run my one-man-band merchandise trade business for more than 25 years. After Covid happened, I joined Amazon. Thanks for my employer support, I still have chance to study my interested subjects. In future, I hope that I can develop some softwares and may be make use of some AI agents for helping elderly people to have better life and spend their time.  
                     <br>
                     <br>I have studied the following programming languages: HTML, CSS, Python, JavaScript, C# and database programing. 
                     <br>
@@ -82,22 +168,58 @@
         <div class="Row" id="ProjectsLink" id="GitHub">
             <!--Left column-->
             <div class="Column_1 Column_tall">
-                 <div class="submenu">
-                        <h1>Projects Link</h1>
-                        <p>Below links show some recent finished computer programs. Please click to view the website.</p>
-                        <a href="academy_cinemas.html" class="button-link" target="_blank"><span style="font-size: larger; color: gold; font-style: italic;">Academy Cinemas:</span> Using the bootstrap4 css functions to make the website.   Click Here</a>
-                        <br>
-                        <a href="DDP_index.html" class="button-link" target="_blank"><span style="font-size: larger; color: gold; font-style: italic;">Dog's Dating Park:</span> Using two CSS files linked to the HTML file to make the website.   Click Here</a>
-                        <br>
-                        <a href="basic_css_demo_1.html" class="button-link" target="_blank"><span style="font-size: larger; color: gold; font-style: italic;">Emoji animation:</span> Linked CSS file to the HTML program to make the motion of the emojis.   Click Here</a>
+                <h2>Recent finished Projects Linkage--Click below</h2>
+               
+                <div class="submenu">
+                        
+                        <a href="academy_cinemas.html" class="button-link" target="_blank">
+                            <span style="font-size: medium; color: gold; font-style: italic;">Academy Cinemas:</span>
+                                
+                                <video autoplay muted loop class="button-inn">
+                                <source src="./images/video/film_rolling.mp4" type="video/mp4">
+                                <!--Display message if video fails to run-->
+                                Your browser does not support HTML5 video. Click to cinemas
+                                </video>
+                            
+                        </a>
+                       
+                       
+                        <a href="DDP_index.html" class="button-link" target="_blank">
+                            <span style="font-size: medium; color: gold; font-style: italic;">Dog's Dating Park:<br></span>
+                            <img src="./images/Dogsrun.png" style="width: 70%; height: auto;"> 
+                        </a>
+                        
+                        <a href="Pizza.html" class="button-link" target="_blank">
+                            <span style="font-size: medium; color: gold; font-style: italic;">Pizza ordering menu:<br></span>
+                            <img src="./images/Pizza_draw.png" style="width: 60%; height: auto;">
+                        </a>
+                        
+                        <a href="basic_css_demo_1.html" class="button-link" target="_blank">
+                            <span style="font-size: medium; color: gold; font-style: italic;">Emoji animation:</span>
+                            <img src="./images/Emoji.png" style="width: 45%; height: auto;">
+                        </a>
+                
+                        <a href="calculator.html" class="button-link" target="_blank">
+                            <span style="font-size: medium; color: gold; font-style: italic;">Calculator Apps:</span> 
+                            <img src="./images/Calculator.png" style="width: 40%; height: auto;">
+                        </a>
+
+                        <a href="TicTacToe1.html" class="button-link" target="_blank">
+                            <span style="font-size: medium; color: gold; font-style: italic;">Tic Tac Toe Game:</span> 
+                            <img src="./images/Tic_Tac_Toe.png" style="width: 50%; height: auto;">
+                        </a>
+
+                           
                 </div>                    
             </div>
         
           
             <!--Right column-->
-            <div class="Column_2 Column_tall" id="GitHub">
+            <div class="Column_3 Column_tall" id="GitHub">
                 <p class="center white-text">You can view my coding projects on my GitHub profile here:</p>
+                <br>
                 <a href="https://github.com/antifragilestong" target="_blank"><img height="50%" src="./images/GitHub.png" alt="GitHub Logo"></a>
+                
             </div>
         </div>
 
@@ -114,20 +236,20 @@
         <!--Contact section-->
         <div class="Row" id="Contact">
             <!--Contact image, left column-->
-            <div class="Column_2">
+            <div class="Column_5">
                 <img src="./images/emailbox.png" alt="Contact_Image">
             </div>
             <!--Contact form, right column-->
-            <div class="Column_1">
-                <h1>Contact</h1>
+            <div class="Column_4">
+                <h2>Contact</h2>
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
                 <form action="https://formspree.io/f/xbdzvqbn" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
-                        <input type="text" id="Name" name="Name" placeholder="Please enter your name here">
+                        <input type="text" id="Name" name="Name" placeholder="Please enter your name here" required><br><br>
                     <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <input type="email" id="Email" name="Email" placeholder="Please enter your email here"><br><br>
                     <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here" required>
                         <input type="submit" value="SUBMIT">
                 </form>
             </div>
@@ -140,5 +262,11 @@
                 <br>
             </p>
         </footer>
+
+        <script src="./JavaScript/sample_portfolio.js"></script>
+
+
+        
+
     </body>
 </html>
